@@ -9,51 +9,90 @@
         body {
             color: white;
             background-color: black;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
         }
         h1, h2 {
             color: white;
+            text-align: center;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            width: 400px; /* 调整为400像素宽度 */
+        .profile-img {
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .gallery img {
+            width: 45%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Kinnのホームページにようこそ！</h1>
-        <nav>
-            <ul>
-                <li>初めまして</li>
-                <li>「自信作」</li>
-                <li>連絡先</li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2><strong>👋初めまして</strong></h2>
-        <p><br> <strong>·Cyoukinn です</strong></p>
-        <img src="1.jpg" alt="自分の写真">
-        <br>２００１年に中国四川省で生まれ、錦城学院に進学して日本語を専攻し、２０２４年に文学学士号を取得した後、嶺南大学で研究を続けています。
-        <br><br><strong>·修士、生涯学習者</strong>
-        <br>融合科学技術の修士プロジェクトにおける金融商業管理を研究しています。
-        <br><br><strong>·超料理マニア</strong>
-        <br>一度きりの人生をめいっぱい楽しむために、料理を通して、生活も自分も人も愛せるようになります。
-        <br><br><strong>·人生の体験者</strong>
-        <br>人間は初心を忘れがちなものです。だからこそ、何かを始めた時の気持ちを忘れず、常に勇気を持って最善を尽くすことが大切です。
-    </section>
-    <section id="projects">
-        <h2>👩🏻‍🍳「自信作」</h2>
-        <p>自作料理の写真集</p>
-        <img src="3.jpg" alt="四川料理">
-        <img src="4.jpg" alt="火鍋">
-        <img src="5.jpg" alt="家庭料理">
-        <img src="6.jpg" alt="おいしい料理">
-    </section>
-    <footer id="contact">
-        <h2>📧連絡先</h2>
-        <p>Email: xin010210@gmail.com</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Kinnのホームページにようこそ！</h1>
+            <nav>
+                <ul>
+                    <li>初めまして</li>
+                    <li>「自信作」</li>
+                    <li>連絡先</li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about">
+            <h2><strong>👋初めまして</strong></h2>
+            <img src="1.jpg" alt="自分の写真" class="profile-img">
+            <p><strong>·Cyoukinn です</strong></p>
+            <p>２００１年に中国四川省で生まれ、錦城学院に進学して日本語を専攻し、２０２４年に文学学士号を取得した後、嶺南大学で研究を続けています。</p>
+            <p><strong>·修士、生涯学習者</strong><br>
+            融合科学技術の修士プロジェクトにおける金融商業管理を研究しています。</p>
+            <p><strong>·超料理マニア</strong><br>
+            一度きりの人生をめいっぱい楽しむために、料理を通して、生活も自分も人も愛せるようになります。</p>
+            <p><strong>·人生の体験者</strong><br>
+            人間は初心を忘れがちなものです。だからこそ、何かを始めた時の気持ちを忘れず、常に勇気を持って最善を尽くすことが大切です。</p>
+        </section>
+        <section id="projects">
+            <h2>👩🏻‍🍳「自信作」</h2>
+            <p>自作料理の写真集</p>
+            <div class="gallery">
+                <img src="3.jpg" alt="四川料理">
+                <img src="4.jpg" alt="火鍋">
+                <img src="5.jpg" alt="家庭料理">
+                <img src="6.jpg" alt="おいしい料理">
+            </div>
+        </section>
+        <footer id="contact">
+            <h2>📧連絡先</h2>
+            <p>Email: xin010210@gmail.com</p>
+        </footer>
+    </div>
 </body>
 </html>
