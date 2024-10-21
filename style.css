@@ -7,8 +7,8 @@ body {
 }
 
 header {
-    background-color: white;
-    color: white;
+    background-color: transparent;
+    color: transparent;
     padding: 10px 0;
     text-align: center;
 }
@@ -34,8 +34,8 @@ section {
 }
 
 footer {
-    background-color:white;
-    color: white;
+    background-color:transparent;
+    color: transparent;
     text-align: center;
     padding: 10px;
     position: fixed;
